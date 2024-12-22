@@ -8,10 +8,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Distribuidora Stalpi C.A. | Zona Wifi</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function ver_detalles(seccion) {
+        const seccionDiv = document.getElementById(seccion);
+        const boton = document.getElementById("btn_" + seccion);
+
+        if (seccionDiv.style.display === "none" || seccionDiv.style.display === "") {
+            boton.innerHTML = "Ocultar";
+            seccionDiv.style.display = "block";
+        } else {
+            boton.innerHTML = "Acceder como usuario";
+            seccionDiv.style.display = "none";
+        }
+    }
+    </script>
 </head>
 
 <body>
-
+    <style>
+        /* Inicializa el div como oculto */
+        #detalle_admin {
+            display: none;
+        }
+    </style>
     <!-- two other colors
 
 <body class="lite">
@@ -56,18 +75,26 @@
 
                         $(if error)$(error)$(endif)
                     </p>
-                    <label>
-                        <img class="ico" src="img/user.svg" alt="#" />
-                        <input name="username" type="text" value="$(username)" placeholder="Username" />
-                    </label>
+                    <h1>
+                        <u style="color: #2d3090; cursor: pointer;">
+                            <span id="btn_detalle_admin" onclick="ver_detalles('detalle_admin')">
+                                Acceder como usuario
+                            </span>
+                        </u>
+                    </h1>
+                    <div id="detalle_admin"> 
+                        <label>
+                            <img class="ico" src="img/user.svg" alt="#" />
+                            <input name="username" type="text" value="$(username)" placeholder="Username" />
+                        </label>
 
-                    <label>
-                        <img class="ico" src="img/password.svg" alt="#" />
-                        <input name="password" type="password" placeholder="Password" />
-                    </label>
+                        <label>
+                            <img class="ico" src="img/password.svg" alt="#" />
+                            <input name="password" type="password" placeholder="Password" />
+                        </label>
 
-                    <input type="submit" value="Connectar" />
-
+                        <input type="submit" value="Connectar" />
+                    </div>
                 </form>
                 <p class="info bt">Zona Wifi Distribuidora Stalpi C.A.</p>
 
