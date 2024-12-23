@@ -20,21 +20,21 @@
     <div class="ie-fixMinHeight">
         <div class="main">
             <div class="wrap">
-                <h1>You have just logged out!</h1> 
+                <h1>¡Acabas de cerrar sesión!</h1> 
                 <table>  
-                    <tr><td>Username</td><td>$(username)</td></tr>
-                    <tr><td>IP address</td><td>$(ip)</td></tr>
-                    <tr><td>MAC address</td><td>$(mac)</td></tr>
-                    <tr><td>Session time</td><td>$(uptime)</td></tr>
+                    <tr><td>Usuario</td><td>$(username)</td></tr>
+                    <!-- <tr><td>Dirección IP</td><td>$(ip)</td></tr>
+                    <tr><td>MAC address</td><td>$(mac)</td></tr>-->
+                    <tr><td>Tiempo de sesión</td><td>$(uptime)</td></tr>
                     $(if session-time-left)
-                    <tr><td>Time left</td><td>$(session-time-left)</td></tr>
+                    <tr><td>Tiempo restante</td><td>$(session-time-left)</td></tr>
                     $(endif)
-                    <tr><td>Bytes up / down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>
+                    <!-- <tr><td>Bytes up / down:</td><td>$(bytes-in-nice) / $(bytes-out-nice)</td></tr>-->
                 </table>
 
 
                 <form action="$(link-login)" name="login" onSubmit="return openLogin()">
-                <input type="submit" value="Log in">
+                <input type="submit" value="Conectar">
                 </form>
             </div>
         </div>
