@@ -19,6 +19,9 @@ html {
     min-height: 100%;
     overflow-x: hidden
 }
+html {
+    scrollbar-gutter: stable;
+}
 
 body {
     background:#f2f1ef;
