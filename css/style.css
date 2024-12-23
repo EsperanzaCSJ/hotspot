@@ -21,13 +21,11 @@ html {
 }
 
 body {
-    background: #a2a09b;
-    background: -webkit-linear-gradient(315deg, hsla(236.6, 0%, 53.52%, 1) 0, hsla(236.6, 0%, 53.52%, 0) 70%), -webkit-linear-gradient(65deg, hsla(220.75, 34.93%, 26.52%, 1) 10%, hsla(220.75, 34.93%, 26.52%, 0) 80%), -webkit-linear-gradient(135deg, hsla(46.42, 36.62%, 83.92%, 1) 15%, hsla(46.42, 36.62%, 83.92%, 0) 80%), -webkit-linear-gradient(205deg, hsla(191.32, 50.68%, 56.45%, 1) 100%, hsla(191.32, 50.68%, 56.45%, 0) 70%);
-    background: linear-gradient(135deg, hsla(236.6, 0%, 53.52%, 1) 0, hsla(236.6, 0%, 53.52%, 0) 70%), linear-gradient(25deg, hsla(220.75, 34.93%, 26.52%, 1) 10%, hsla(220.75, 34.93%, 26.52%, 0) 80%), linear-gradient(315deg, hsla(46.42, 36.62%, 83.92%, 1) 15%, hsla(46.42, 36.62%, 83.92%, 0) 80%), linear-gradient(245deg, hsla(191.32, 50.68%, 56.45%, 1) 100%, hsla(191.32, 50.68%, 56.45%, 0) 70%)
+    background:#f2f1ef;
 }
 
 a {
-    color: #486173
+    color: #2d3090
 }
 
 input,
@@ -90,7 +88,7 @@ p::first-letter {
 
 h1 {
     text-align: center;
-    color: #fff;
+    color:#222;
     font-size: 24px !important
 }
 
@@ -151,7 +149,7 @@ form {
 }
 
 .info {
-    color: #fff;
+    color: #222;
     text-align: center;
     margin-bottom: 30px
 }
@@ -170,7 +168,8 @@ input:focus {
 input[type=password],
 input[type=text] {
     width: 100%;
-    border: 1px solid background-color: rgba(255, 255, 255, .8);
+    border: 1px solid;
+    background-color: rgba(255, 255, 255, .8);
     height: 44px;
     padding: 3px 20px 3px 40px;
     margin-bottom: 20px;
@@ -193,7 +192,7 @@ input[type=text]:focus {
 }
 
 input[type=submit] {
-    background: #3e4d59;
+    background: #2d3090;
     color: #fff;
     border: 0;
     cursor: pointer;
@@ -217,7 +216,7 @@ table {
 }
 
 table td {
-    color: #fff;
+    color: #222;
     border-bottom: 1px solid #e6e6e6;
     padding: 10px 4px 10px 0
 }
@@ -252,12 +251,12 @@ table td:first-child {
 }
 
 .dark input[type=submit] {
-    background: #dc3a41
+    background: #6dbaee
 }
 
 .dark input[type=submit]:focus,
 .dark input[type=submit]:hover {
-    background: #b92f35
+    background: #6dbaee
 }
 
 .dark input[type=password],
@@ -266,7 +265,7 @@ table td:first-child {
 }
 
 .dark a {
-    color: #dc3a41
+    color: #6dbaee
 }
 
 .dark table td {
